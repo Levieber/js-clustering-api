@@ -1,0 +1,51 @@
+> simple-api@1.0.0 test
+> oha -z 30sec -c 500 --latency-correction --disable-keepalive http://localhost:3000
+
+Summary:
+  Success rate: 92.30%
+  Total:        30.0294 secs
+  Slowest:      3.4580 secs
+  Fastest:      0.1018 secs
+  Average:      1.3257 secs
+  Requests/sec: 363.3437
+
+  Total data:   145.43 KiB
+  Size/request: 15
+  Size/sec:     4.84 KiB
+
+Response time histogram:
+  0.102 [1]    |
+  0.437 [95]   |
+  0.773 [3186] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.109 [677]  |■■■■■■
+  1.444 [2231] |■■■■■■■■■■■■■■■■■■■■■■
+  1.780 [913]  |■■■■■■■■■
+  2.116 [807]  |■■■■■■■■
+  2.451 [839]  |■■■■■■■■
+  2.787 [236]  |■■
+  3.122 [526]  |■■■■■
+  3.458 [98]   |
+
+Response time distribution:
+  10.00% in 0.5245 secs
+  25.00% in 0.6191 secs
+  50.00% in 1.1850 secs
+  75.00% in 1.7956 secs
+  90.00% in 2.4103 secs
+  95.00% in 2.8537 secs
+  99.00% in 3.1271 secs
+  99.90% in 3.3382 secs
+  99.99% in 3.4580 secs
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.7140 secs, 0.0003 secs, 2.8811 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0011 secs
+
+Status code distribution:
+  [200] 9609 responses
+
+Error distribution:
+  [799] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (os error 10061)
+  [500] aborted due to deadline
+  [3] Foi fornecido um argumento inválido. (os error 10022)

@@ -1,0 +1,50 @@
+> simple-api@1.0.0 test
+> oha -z 30sec -c 500 --latency-correction --disable-keepalive http://localhost:3000
+
+Summary:
+  Success rate: 63.06%
+  Total:        30.0220 secs
+  Slowest:      5.2526 secs
+  Fastest:      0.2516 secs
+  Average:      2.4958 secs
+  Requests/sec: 220.9046
+
+  Total data:   60.42 KiB
+  Size/request: 16
+  Size/sec:     2.01 KiB
+
+Response time histogram:
+  0.252 [1]   |
+  0.752 [42]  |■
+  1.252 [191] |■■■■■■■
+  1.752 [699] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.252 [787] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  2.752 [706] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  3.252 [584] |■■■■■■■■■■■■■■■■■■■■■■■
+  3.752 [486] |■■■■■■■■■■■■■■■■■■■
+  4.252 [260] |■■■■■■■■■■
+  4.753 [80]  |■■■
+  5.253 [31]  |■
+
+Response time distribution:
+  10.00% in 1.3825 secs
+  25.00% in 1.7687 secs
+  50.00% in 2.3856 secs
+  75.00% in 3.1611 secs
+  90.00% in 3.7367 secs
+  95.00% in 3.9801 secs
+  99.00% in 4.6541 secs
+  99.90% in 5.1419 secs
+  99.99% in 5.2526 secs
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.7637 secs, 0.0002 secs, 2.5147 secs
+  DNS-lookup:   0.0001 secs, 0.0000 secs, 0.0329 secs
+
+Status code distribution:
+  [200] 3867 responses
+
+Error distribution:
+  [2265] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (os error 10061)
+  [500] aborted due to deadline

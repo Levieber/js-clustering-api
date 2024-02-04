@@ -1,0 +1,13 @@
+{
+  "name": "simple-api",
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Levi Eber",
+  "scripts": {
+    "test": "oha -z 30sec -c 500 --latency-correction --disable-keepalive http://localhost:3000"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": "v20.11.0"
+  }
+}
